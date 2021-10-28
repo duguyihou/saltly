@@ -8,8 +8,7 @@
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint:css": "stylelint './src/**/*.{css,scss}' --fix",
-    "prepare": "husky install",
-    "commit": "commit"
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^17.0.2",
