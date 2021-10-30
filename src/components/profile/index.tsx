@@ -6,7 +6,7 @@ import { ProfileProps } from '@/typings'
 
 function Profile({ avatar, title, description, menu }: ProfileProps) {
   return (
-    <div className="bg-white w-72 h-auto p-4 rounded-md flex-col justify-start items-center shadow-lg hover:shadow-2xl">
+    <div className="bg-white w-72 h-auto p-4 rounded-md flex-col justify-start items-center shadow-lg hover:shadow-2xl z-10 fixed">
       <div className="flex justify-center items-center w-full h-auto">
         <img className="w-56 h-56 rounded-full" src={avatar} alt="avatar" />
       </div>
