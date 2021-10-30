@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
+
 export default {
   user: {
     name: 'Kong',
@@ -5,15 +8,15 @@ export default {
     avatar: 'https://avatars.githubusercontent.com/u/9347790?v=4',
     contact: [
       {
-        icon: 'github',
+        icon: FaGithub,
         href: 'https://github.com/duguyihou',
       },
       {
-        icon: 'email',
+        icon: SiGmail,
         href: 'duguyihou@gmail.com',
       },
       {
-        icon: 'linkedin',
+        icon: FaLinkedin,
         href: 'https://www.linkedin.com/in/yongcong-hou/',
       },
     ],
