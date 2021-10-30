@@ -13,7 +13,7 @@ function Home() {
         description={description}
         contact={contact}
         menu={menu}
-      />{' '}
+      />
     </Background>
   )
 }
