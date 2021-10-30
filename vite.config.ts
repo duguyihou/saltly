@@ -22,6 +22,7 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './src/typings'),
       },
       { find: '@hooks', replacement: path.resolve(__dirname, './src/hooks') },
+      { find: '@config', replacement: path.resolve(__dirname, './src/config') },
       { find: '@', replacement: path.resolve(__dirname, './src') },
     ],
   },
