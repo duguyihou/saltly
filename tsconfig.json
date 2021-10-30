@@ -23,6 +23,7 @@
       "@assets/*": ["./src/assets/*"],
       "@typings/*": ["./scr/typings/*"],
       "@hooks/*": ["./src/hooks/*"],
+      "@config/*": ["./src/config/*"],
       "@/*": ["./src/*"]
     }
   },
