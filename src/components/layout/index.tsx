@@ -3,18 +3,16 @@ import config from '@config/global'
 import { ReactNode } from 'react'
 
 function Layout({ children }: { children: ReactNode }) {
-  const { user, menu } = config
-  const { avatar, name, description, contact } = user
+  const { user } = config
+  const { avatar, name, description } = user
   return (
     <div className="w-screen h-screen flex flex-row justify-start items-center">
-      <Profile
-        avatar={avatar}
-        title={name}
-        description={description}
-        contact={contact}
-        menu={menu}
-      />
-      <section>{children}</section>
+      <div className="flex justify-center items-center w-1/4 h-full bg-gray-500 px-10">
+        <Profile avatar={avatar} title={name} description={description} />
+      </div>
+      <section className="flex flex-col justify-start items-center w-1/3 h-full">
+        {children}
+      </section>
     </div>
   )
 }
