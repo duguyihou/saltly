@@ -24,6 +24,7 @@
       "@typings/*": ["./scr/typings/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@config/*": ["./src/config/*"],
+      "@utils/*": ["./src/utils/*"],
       "@/*": ["./src/*"]
     }
   },
