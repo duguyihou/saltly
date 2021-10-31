@@ -1,12 +1,16 @@
+/* eslint-disable camelcase */
 import Post from '@cmpts/post'
 
-function Feed() {
+function Feed({ posts }: any) {
   return (
     <div className="w-full h-full">
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post: any) => (
+        <Post
+          key={post.created_at}
+          title={post.title}
+          createdAt={post.created_at}
+        />
+      ))}
     </div>
   )
 }

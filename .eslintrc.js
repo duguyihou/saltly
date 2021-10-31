@@ -30,6 +30,7 @@ module.exports = {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'react/react-in-jsx-scope': 'off',
     'no-use-before-define': 'off',
+    'no-param-reassign': [2, { props: false }],
     '@typescript-eslint/no-use-before-define': ['error'],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',

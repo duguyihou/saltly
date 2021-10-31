@@ -47,24 +47,6 @@ const service = axios.create({
   baseURL: 'https://api.github.com',
   withCredentials: false,
   timeout: 30000,
-  transformRequest: [
-    (data: any) => {
-      const request = JSON.stringify(data)
-      return request
-    },
-  ],
-  validateStatus() {
-    return true
-  },
-  transformResponse: [
-    (data: any) => {
-      let response
-      if (typeof data === 'string' && data.startsWith('{')) {
-        response = JSON.parse(data)
-      }
-      return response
-    },
-  ],
 })
 
 service.interceptors.request.use(
