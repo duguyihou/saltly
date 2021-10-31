@@ -9,6 +9,7 @@ function Feed({ posts }: any) {
           key={post.created_at}
           title={post.title}
           createdAt={post.created_at}
+          number={post.number}
         />
       ))}
     </div>
