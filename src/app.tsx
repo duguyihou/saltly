@@ -1,16 +1,14 @@
-import Code from '@modules/code'
 import Home from '@modules/home'
-import Life from '@modules/life'
 import NotFound from '@modules/notfound'
+import Welcome from '@modules/welcome'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/life" exact component={Life} />
-        <Route path="/code" exact component={Code} />
+        <Route path="/" exact component={Welcome} />
+        <Route path="/home" exact component={Home} />
         <Route component={NotFound} />
       </Switch>
     </Router>
