@@ -27,8 +27,8 @@ export default {
       href: '/code',
     },
     {
-      name: 'Thought',
-      href: '/thought',
+      name: 'Life',
+      href: '/life',
     },
   ],
 }

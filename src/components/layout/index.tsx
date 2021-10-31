@@ -1,16 +1,12 @@
-import Background from '@cmpts/background'
 import Profile from '@cmpts/profile'
 import config from '@config/global'
-import { useEffect } from 'react'
+import { ReactNode } from 'react'
 
-function Home() {
+function Layout({ children }: { children: ReactNode }) {
   const { user, menu } = config
   const { avatar, name, description, contact } = user
-  useEffect(() => {
-    document.title = 'Kong-home'
-  }, [])
   return (
-    <Background>
+    <div className="w-screen h-screen flex flex-row justify-start items-center">
       <Profile
         avatar={avatar}
         title={name}
@@ -18,8 +14,9 @@ function Home() {
         contact={contact}
         menu={menu}
       />
-    </Background>
+      <section>{children}</section>
+    </div>
   )
 }
 
-export default Home
+export default Layout
