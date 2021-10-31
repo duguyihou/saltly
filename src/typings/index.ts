@@ -13,6 +13,7 @@ export interface ProfileProps {
 export interface PostProps {
   title: string
   createdAt: string
+  number: number
 }
 
 export interface FeedProps {
