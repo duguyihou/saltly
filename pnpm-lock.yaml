@@ -25,6 +25,7 @@ specifiers:
   eslint-plugin-simple-import-sort: ^7.0.0
   husky: ^7.0.4
   moment: ^2.29.1
+  pnpm: ^6.19.1
   postcss: ^8.3.11
   prettier: ^2.4.1
   react: ^17.0.2
@@ -73,6 +74,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.2.0_eslint@8.1.0
   eslint-plugin-simple-import-sort: 7.0.0_eslint@8.1.0
   husky: 7.0.4
+  pnpm: 6.19.1
   postcss: 8.3.11
   prettier: 2.4.1
   stylelint: 14.0.1
@@ -4105,6 +4107,12 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       find-up: 2.1.0
+    dev: true
+
+  /pnpm/6.19.1:
+    resolution: {integrity: sha512-591jc9Ppqow44ztAMwH2m3G0gBIqd7oa5UBI5uA6iFjV0V9Fgjn+BBFQZEY75xtwjWdeLFOJTIk3fjYVXSX+ng==}
+    engines: {node: '>=12.17'}
+    hasBin: true
     dev: true
 
   /posix-character-classes/0.1.1:

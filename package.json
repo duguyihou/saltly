@@ -43,6 +43,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.4",
+    "pnpm": "^6.19.1",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
     "stylelint": "^14.0.1",
