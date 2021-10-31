@@ -10,8 +10,9 @@ function Home() {
     document.title = 'Kong-home'
   }, [])
   return (
-    <Background>
-      <div className="w-72 h-96">
+    <div className="w-screen h-screen flex justify-center items-center">
+      <Background />
+      <div className="w-72 h-96 ">
         <Profile
           avatar={avatar}
           title={name}
@@ -20,7 +21,7 @@ function Home() {
           menu={menu}
         />
       </div>
-    </Background>
+    </div>
   )
 }
 
