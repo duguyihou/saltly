@@ -2,7 +2,7 @@ import { BackgroundProps } from '@/typings'
 
 function Background({ children }: BackgroundProps) {
   return (
-    <div className="absolute top-0 right-0 left-0 bottom-0 bg-black flex justify-center items-center">
+    <div className="bg-gray-500 flex justify-center items-center w-screen h-screen">
       {children}
     </div>
   )

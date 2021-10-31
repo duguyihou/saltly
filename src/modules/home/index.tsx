@@ -11,13 +11,15 @@ function Home() {
   }, [])
   return (
     <Background>
-      <Profile
-        avatar={avatar}
-        title={name}
-        description={description}
-        contact={contact}
-        menu={menu}
-      />
+      <div className="w-72 h-96">
+        <Profile
+          avatar={avatar}
+          title={name}
+          description={description}
+          contact={contact}
+          menu={menu}
+        />
+      </div>
     </Background>
   )
 }

@@ -1,31 +1,19 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { GoLocation } from 'react-icons/go'
 
 import { ProfileProps } from '@/typings'
 
-function Profile({ avatar, title, description, menu }: ProfileProps) {
+function Profile({ avatar, title, description }: ProfileProps) {
   return (
-    <div className="bg-white w-72 h-auto p-4 rounded-md flex-col justify-start items-center shadow-lg hover:shadow-2xl">
-      <div className="flex justify-center items-center w-full h-auto">
-        <img className="w-56 h-56 rounded-full" src={avatar} alt="avatar" />
+    <div className="backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 w-full h-full p-4 flex-col justify-start items-center shadow-lg hover:shadow-2xl cursor-pointer">
+      <div className="flex justify-center items-center px-10">
+        <img className="rounded-full" src={avatar} alt="avatar" />
       </div>
-      <h1 className="font-bold text-3xl p-3 text-center">{title}</h1>
-      <p className="text-center text-lg">{description}</p>
-      <nav className="flex flex-row justify-around items-center w-full py-2">
-        {menu.map(({ name, href }) => (
-          <Link className="underline" key={name} to={href}>
-            {name}
-          </Link>
-        ))}
-      </nav>
-      <div className="flex flex-row justify-around items-center">
-        <a href="https://github.com/duguyihou">
-          <FaGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/yongcong-hou/">
-          <FaLinkedin />
-        </a>
+      <h1 className="font-bold text-3xl p-3 text-center text-white">{title}</h1>
+      <div className="text-lg flex flex-row justify-center items-center text-white">
+        <GoLocation />
+        <div className="px-2">Sydney</div>
       </div>
+      <p className="text-center text-lg text-white">{description}</p>
     </div>
   )
 }
