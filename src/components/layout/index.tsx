@@ -10,7 +10,7 @@ function Layout({ children }: { children: ReactNode }) {
       <div className="flex justify-center items-center w-1/4 h-full bg-gray-500 px-10">
         <Profile avatar={avatar} title={name} description={description} />
       </div>
-      <section className="flex flex-col justify-start items-center w-1/3 h-full">
+      <section className="flex flex-col justify-start items-center w-1/2 h-full">
         {children}
       </section>
     </div>

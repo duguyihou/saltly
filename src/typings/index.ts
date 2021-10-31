@@ -19,3 +19,7 @@ export interface PostProps {
 export interface FeedProps {
   posts: PostProps[]
 }
+
+export interface NavbarProps {
+  title: string
+}
