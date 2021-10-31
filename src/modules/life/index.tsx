@@ -1,5 +1,7 @@
+import Layout from '@cmpts/layout'
+
 function Life() {
-  return <div>Life</div>
+  return <Layout>Life</Layout>
 }
 
 export default Life

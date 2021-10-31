@@ -1,5 +1,7 @@
+import Layout from '@cmpts/layout'
+
 function Code() {
-  return <div>Code</div>
+  return <Layout>Code</Layout>
 }
 
 export default Code

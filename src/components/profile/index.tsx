@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { SiGmail } from 'react-icons/si'
 import { Link } from 'react-router-dom'
 
 import { ProfileProps } from '@/typings'
