@@ -2,5 +2,5 @@
   NODE_VERSION = "14"
   NPM_FLAGS = "--prefix=/" # prevent Netlify npm install
 [build]
-  command = "pnpm install --store=node_modules/.pnpm-store && pnpm build"
+  command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
   publish = "dist"
