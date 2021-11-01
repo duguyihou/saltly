@@ -3,7 +3,6 @@
   NPM_FLAGS = "--version" # prevent Netlify npm install
 [build]
   command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
-  functions = "netlify/functions"
   publish = "dist"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
