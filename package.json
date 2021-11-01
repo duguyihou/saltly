@@ -2,7 +2,7 @@
   "name": "salt",
   "version": "0.0.0",
   "scripts": {
-    "prebuild": "test \"$CI\" = true && npm install pnpm -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
+    "prebuild": "[[ $CI = true ]] && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
