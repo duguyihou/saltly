@@ -1,16 +1,16 @@
-import { useAppDispatch, useAppSelector } from '@app/hooks'
-import { fetchPost, postsSelector } from '@app/postSlice'
 import Feed from '@cmpts/feed'
 import Layout from '@cmpts/layout'
 import Navbar from '@cmpts/navbar'
-import { useEffect } from 'react'
+import { usePosts } from '@hooks/usePosts'
 
 function Home() {
-  const dispatch = useAppDispatch()
-  const { posts } = useAppSelector(postsSelector)
-  useEffect(() => {
-    dispatch(fetchPost())
-  }, [])
+  const { posts, isLoading, isError } = usePosts()
+  if (isError) {
+    return <h1>error</h1>
+  }
+  if (isLoading) {
+    return <h1>loading</h1>
+  }
   return (
     <Layout>
       <Navbar title="home" />
