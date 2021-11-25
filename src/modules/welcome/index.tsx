@@ -1,6 +1,7 @@
 import Background from '@cmpts/background'
 import Profile from '@cmpts/profile'
 import config from '@config/global'
+import styles from '@styles/welcome.module.css'
 import { useEffect } from 'react'
 
 function Welcome() {
@@ -10,9 +11,9 @@ function Welcome() {
     document.title = 'Kong'
   }, [])
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div className={styles.page}>
       <Background />
-      <div className="w-72 h-96 ">
+      <div className={styles.card}>
         <Profile avatar={avatar} title={name} description={description} />
       </div>
     </div>

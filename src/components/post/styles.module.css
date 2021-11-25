@@ -1,0 +1,7 @@
+.item {
+  @apply flex flex-row justify-between items-center p-5 rounded-md shadow-md hover:shadow-lg;
+}
+
+.title {
+  @apply text-xl hover:text-gray-800 font-bold;
+}
