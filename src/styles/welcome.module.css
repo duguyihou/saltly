@@ -1,0 +1,7 @@
+.page {
+  @apply w-screen h-screen flex justify-center items-center;
+}
+
+.card {
+  @apply w-72 h-96;
+}
