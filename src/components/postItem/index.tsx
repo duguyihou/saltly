@@ -5,7 +5,7 @@ import { PostProps } from '@/typings'
 
 import styles from './styles.module.css'
 
-function Post({ title, createdAt, number }: PostProps) {
+function PostItem({ title, createdAt, number }: PostProps) {
   return (
     <Link to={`/post/${number}`}>
       <div className={styles.item}>
@@ -16,4 +16,4 @@ function Post({ title, createdAt, number }: PostProps) {
   )
 }
 
-export default Post
+export default PostItem

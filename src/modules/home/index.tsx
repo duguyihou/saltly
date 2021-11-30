@@ -6,10 +6,18 @@ import { usePosts } from '@hooks/usePosts'
 function Home() {
   const { posts, isLoading, isError } = usePosts()
   if (isError) {
-    return <h1>error</h1>
+    return (
+      <Layout>
+        <h1>error</h1>
+      </Layout>
+    )
   }
   if (isLoading) {
-    return <h1>loading</h1>
+    return (
+      <Layout>
+        <h1>loading</h1>
+      </Layout>
+    )
   }
   return (
     <Layout>
